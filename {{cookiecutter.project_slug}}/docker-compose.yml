@@ -1,0 +1,34 @@
+version: '3'
+
+volumes:
+  local_postgres_data: { }
+
+services:
+  {{cookiecutter.project_slug}}:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: app_local
+    restart: unless-stopped
+    depends_on:
+      - postgres
+    volumes:
+      - .:/work
+    environment:
+      - POSTGRES_DSN=postgres://{{cookiecutter.project_slug}}:{{cookiecutter.project_slug}}@postgres:5432/{{cookiecutter.project_slug}}
+      - POSTGRES_DSN_TEST=postgres://{{cookiecutter.project_slug}}:{{cookiecutter.project_slug}}@postgres:5432/{{cookiecutter.project_slug}}_{}
+    ports:
+      - 8000:8000
+    command:
+      - /scripts/start-production.sh
+
+  postgres:
+    image: postgres:13-alpine
+    ports:
+      - 15432:5432
+    volumes:
+      - local_postgres_data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER={{cookiecutter.project_slug}}
+      - POSTGRES_PASSWORD={{cookiecutter.project_slug}}
+      - POSTGRES_DB={{cookiecutter.project_slug}}

@@ -1,0 +1,22 @@
+# Core
+# ------------------------------------------------------------------------------
+fastapi            # https://github.com/tiangolo/fastapi
+pydantic           # https://github.com/samuelcolvin/pydantic
+requests           # https://github.com/psf/requests
+uvicorn[standard]  # https://github.com/encode/uvicorn
+gunicorn           # https://github.com/benoitc/gunicorn
+
+httpx
+python-multipart
+typer
+
+# Database
+# ------------------------------------------------------------------------------
+sqlalchemy
+sqlalchemy-cockroachdb
+psycopg2
+alembic
+
+# Sentry
+# ------------------------------------------------------------------------------
+sentry-sdk         # https://github.com/getsentry/sentry-python
