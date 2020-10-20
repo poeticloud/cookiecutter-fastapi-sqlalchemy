@@ -31,7 +31,7 @@ h11==0.11.0               # via httpcore, uvicorn
 httpcore==0.12.0          # via httpx
 httptools==0.1.1          # via uvicorn
 httpx==0.16.1             # via -r requirements/././production.in
-humanize==3.0.1           # via pgcli
+humanize==3.1.0           # via pgcli
 identify==1.5.6           # via pre-commit
 idna==2.10                # via requests, rfc3986
 iniconfig==1.1.1          # via pytest
@@ -84,7 +84,7 @@ regex==2020.10.15         # via black
 requests==2.24.0          # via -r requirements/././production.in
 requirements-detector==0.7  # via prospector
 rfc3986[idna2008]==1.4.0  # via httpx
-sentry-sdk==0.19.0        # via -r requirements/././production.in
+sentry-sdk==0.19.1        # via -r requirements/././production.in
 setoptconf==0.2.0         # via prospector
 setproctitle==1.1.10      # via pgcli
 six==1.15.0               # via astroid, configobj, packaging, pip-tools, python-dateutil, python-multipart, virtualenv
@@ -103,9 +103,9 @@ typed-ast==1.4.1          # via black
 typer==0.3.2              # via -r requirements/././production.in
 typing-extensions==3.7.4.3  # via black
 urllib3==1.25.10          # via requests, sentry-sdk
-uvicorn[standard]==0.12.1  # via -r requirements/././production.in
+uvicorn[standard]==0.12.2  # via -r requirements/././production.in
 uvloop==0.14.0            # via uvicorn
-virtualenv==20.0.34       # via pre-commit
+virtualenv==20.0.35       # via pre-commit
 watchgod==0.6             # via uvicorn
 wcwidth==0.2.5            # via prompt-toolkit, tabulate
 websockets==8.1           # via uvicorn

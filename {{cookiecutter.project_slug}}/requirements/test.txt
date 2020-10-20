@@ -55,7 +55,7 @@ pyyaml==5.3.1             # via prospector, uvicorn
 requests==2.24.0          # via -r requirements/./production.in
 requirements-detector==0.7  # via prospector
 rfc3986[idna2008]==1.4.0  # via httpx
-sentry-sdk==0.19.0        # via -r requirements/./production.in
+sentry-sdk==0.19.1        # via -r requirements/./production.in
 setoptconf==0.2.0         # via prospector
 six==1.15.0               # via astroid, packaging, python-dateutil, python-multipart
 sniffio==1.2.0            # via httpcore, httpx
@@ -66,8 +66,8 @@ starlette==0.13.6         # via fastapi
 termcolor==1.1.0          # via pytest-sugar
 toml==0.10.1              # via coverage, pylint, pytest
 typer==0.3.2              # via -r requirements/./production.in
-urllib3==1.25.10          # via requests, sentry-sdk
-uvicorn[standard]==0.12.1  # via -r requirements/./production.in
+urllib3==1.25.11          # via requests, sentry-sdk
+uvicorn[standard]==0.12.2  # via -r requirements/./production.in
 uvloop==0.14.0            # via uvicorn
 watchgod==0.6             # via uvicorn
 websockets==8.1           # via uvicorn
